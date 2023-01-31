@@ -14,3 +14,5 @@ Développement composant logiciel: SprintBoot
 Nous avons trois microservices (my-movie, my-finder et my-dashboard)
 J'ai utilisé: https://start.spring.io/; 
 pour créer mes microservices
+## Dépendances
+pour les dépendances de mise à jour on a: https://mvnrepository.com/
