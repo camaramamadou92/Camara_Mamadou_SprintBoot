@@ -24,6 +24,8 @@ public class ActorService {
                 .collect(Collectors.toList());
     }
 
-    
+    public void updateActor(String name, Actor actor) {
+        int index = actors.indexOf(actors.stream().filter(a -> a.getName().equalsIgnoreCase(name)).findFirst().get());
+    }
 }
 
