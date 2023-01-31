@@ -16,14 +16,7 @@ import java.time.LocalDate;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-    @ApiModelProperty(notes = "Titre du film")
-    private String title;
-    @ApiModelProperty(notes = "Réalisateur du film")
-    private String director;
-    @ApiModelProperty(notes = "Acteur principal du film")
-    private Actor leadActor;
-    @ApiModelProperty(notes = "Date de sortie du film")
-    private LocalDate releaseDate;
+
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)

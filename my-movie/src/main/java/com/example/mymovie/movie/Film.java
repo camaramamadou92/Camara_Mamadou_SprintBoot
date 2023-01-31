@@ -9,11 +9,14 @@ import java.util.List;
 
 @ApiModel(description = "Détail de la classe Film")
 public class Film {
+    @ApiModelProperty(notes = "Titre du film")
     private String title;
+    @ApiModelProperty(notes = "Réalisateur du film")
     private String director;
+    @ApiModelProperty(notes = "Acteur principal du film")
     private Actor leadActor;
+    @ApiModelProperty(notes = "Date de sortie du film")
     private Date releaseDate;
-
 
 
     // getters and setters for each field
