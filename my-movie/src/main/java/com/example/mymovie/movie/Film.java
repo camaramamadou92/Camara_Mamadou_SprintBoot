@@ -1,13 +1,20 @@
 package com.example.mymovie.movie;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
+@ApiModel(description = "Détail de la classe Film")
 public class Film {
     private String title;
     private String director;
     private Actor leadActor;
     private Date releaseDate;
+
+
 
     // getters and setters for each field
 
