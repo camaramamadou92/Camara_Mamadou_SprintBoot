@@ -30,5 +30,13 @@ public class FilmService {
                 .filter(film -> film.getReleaseDate() == date)
                 .collect(Collectors.toList());
     }
+    public void updateFilm(String title, Film film) {
+        int index = films.indexOf(films.stream().filter(f -> f.getTitle().equalsIgnoreCase(title)).findFirst().get());
+        films.set(index, film);
+    }
+    public void deleteFilm(String title) {
+        films.removeIf(film -> film.getTitle().equalsIgnoreCase(title));
+    }
 }
+
 
